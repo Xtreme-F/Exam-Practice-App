@@ -1,0 +1,37 @@
+||322EXAM V1.0.0||sample||12||
+||Question V1.0.0||1||1||1||0||0||
+What's the complexity of MergeSort?
+O(nlogn)
+||Question V1.0.0||2||1||1||0||0||
+What's the complexity of Binary Search?
+O(logn)
+||Question V1.0.0||3||1||1||0||0||
+Where was Alan Turin from?
+London, England
+||Question V1.0.0||4||1||1||0||0||
+Is logistic regression a classification method?
+yes.
+||Question V1.0.0||5||1||1||0||0||
+Name the process of dividing a dataset into groups such that the members of each group are as similar (close) as possible to one another, and different groups are as dissimilar (far) as possible from one another.
+Clustering
+||Question V1.0.0||6||1||1||0||0||
+Operating System concept that organizes the order in which tasks get CPU time.
+Scheduler
+||Question V1.0.0||7||1||1||0||0||
+Algorithmic design technique that avoids redoing subproblems that are already done so that the algorithm is more efficient. (a smart way to solve problems)
+Dynamic Programming
+||Question V1.0.0||8||1||1||0||0||
+Data Science stage in which machine learning is very often heavily used.
+Modeling
+||Question V1.0.0||9||1||1||0||0||
+High-level concept where classes can extend other classes.
+Inheritance
+||Question V1.0.0||10||1||1||0||0||
+Term used when threads get stuck waiting for each other for any reason. (i.e. thread 1 waits for thread 2 to be done but thread 2 is also waiting for thread 1)
+Deadlock
+||Question V1.0.0||11||1||1||0||0||
+A graph that has no cycles is a:
+Tree
+||Question V1.0.0||12||1||1||0||0||
+In Networking, how many layers does the OSI Model have?
+7 layers.

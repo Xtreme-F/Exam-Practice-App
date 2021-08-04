@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="680.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ex.controllers.MEditDialog_Controller">
+   <children>
+    <Button fx:id="button_quit" layoutX="15.0" layoutY="15.0" onAction="#actionQuit" text="Quit">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font></Button>
+  	<Label fx:id="title" alignment="CENTER" layoutX="261.0" layoutY="28.0" prefHeight="27.0" prefWidth="166.0" style="&#10;" text="DialogBox" textAlignment="CENTER" wrapText="false">
+    	<font>
+      		<Font name="MV Boli" size="24.0" />
+    	</font>
+ 	</Label>
+    <Label fx:id="label_system" layoutX="110.0" layoutY="280.0" prefHeight="18.0" prefWidth="300.0" text="" />
+      <Text layoutX="28.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question:" wrappingWidth="138.13672637939453">
+         <font>
+            <Font name="MV Boli" size="18.0" />
+         </font></Text>
+      <Text layoutX="28.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Answer:" wrappingWidth="138.13672637939453">
+         <font>
+            <Font name="MV Boli" size="18.0" />
+         </font></Text>
+      <TextArea fx:id="box_question" layoutX="28.0" layoutY="115.0" prefHeight="168.0" prefWidth="622.0" />
+      <TextArea fx:id="box_answer" layoutX="28.0" layoutY="350.0" prefHeight="168.0" prefWidth="622.0" />
+      <Button fx:id="button_set" layoutX="284.0" layoutY="607.0" mnemonicParsing="false" onAction="#actionSet" prefHeight="26.0" prefWidth="110.0" text="Set Question">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_cancel" layoutX="570.0" layoutY="15.0" mnemonicParsing="false" onAction="#actionCancel" prefHeight="35.0" prefWidth="79.0" text="Cancel">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="28.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score:" wrappingWidth="102.39999999999986">
+         <font>
+            <Font name="MV Boli" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textfield_score" layoutX="109.0" layoutY="543.0" prefHeight="26.0" prefWidth="110.0" text="1" />
+      <Text layoutX="389.0" layoutY="563.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulty:" wrappingWidth="138.13672637939464">
+         <font>
+            <Font name="MV Boli" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textfield_diff" layoutX="515.0" layoutY="543.0" prefHeight="26.0" prefWidth="110.0" text="1" />
+   </children>
+</AnchorPane>

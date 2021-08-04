@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="749.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ex.controllers.MEdit_Controller">
+   <children>
+  	<Label fx:id="title_login" alignment="CENTER" layoutX="260.0" layoutY="16.0" prefHeight="43.0" prefWidth="269.0" style="&#10;" text="Edit Exam" textAlignment="CENTER" underline="true" wrapText="false">
+    	<font>
+      		<Font name="MV Boli" size="24.0" />
+    	</font>
+ 	</Label>
+      <Button fx:id="button_ok" layoutX="236.0" layoutY="687.0" mnemonicParsing="false" onAction="#actionOK" prefHeight="26.0" prefWidth="110.0" text="Ok!">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+      </Button>
+    <Button fx:id="button_quit" layoutX="15.0" layoutY="15.0" onAction="#actionQuit" text="Quit App">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="label_questionN" layoutX="33.0" layoutY="59.0" prefHeight="32.0" prefWidth="163.0" text="Exam Questions:" underline="true">
+         <font>
+            <Font name="MV Boli" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_cancel" layoutX="482.0" layoutY="687.0" mnemonicParsing="false" onAction="#actionCancel" prefHeight="26.0" prefWidth="110.0" text="Cancel">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listview" layoutX="35.0" layoutY="101.0" prefHeight="380.0" prefWidth="762.0" />
+      <Button fx:id="button_edit" layoutX="311.0" layoutY="618.0" mnemonicParsing="false" onAction="#actionEdit" prefHeight="35.0" prefWidth="204.0" text="Edit Selected Question">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_add" layoutX="62.0" layoutY="618.0" mnemonicParsing="false" onAction="#actionAdd" prefHeight="35.0" prefWidth="204.0" text="Add New Question">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_up" layoutX="101.0" layoutY="491.0" mnemonicParsing="false" onAction="#actionUp" prefHeight="35.0" prefWidth="110.0" text="Move Up">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_down" layoutX="615.0" layoutY="491.0" mnemonicParsing="false" onAction="#actionDown" prefHeight="35.0" prefWidth="110.0" text="Move Down">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_del" layoutX="566.0" layoutY="618.0" mnemonicParsing="false" onAction="#actionDel" prefHeight="35.0" prefWidth="204.0" text="Delete Selected Question">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_score" layoutX="209.0" layoutY="550.0" mnemonicParsing="false" onAction="#actionScore" prefHeight="35.0" prefWidth="174.0" text="Change score(s)">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_diff" layoutX="441.0" layoutY="550.0" mnemonicParsing="false" onAction="#actionDiff" prefHeight="35.0" prefWidth="173.0" text="Change difficulty">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_all" layoutX="358.0" layoutY="491.0" mnemonicParsing="false" onAction="#actionAll" prefHeight="35.0" prefWidth="110.0" text="Select All">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
